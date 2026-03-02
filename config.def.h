@@ -6,7 +6,7 @@ static const unsigned int gappx     = 10;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10" };
+static const char *fonts[]          = { "monospace:size=10", "fontawesome=12" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -20,7 +20,8 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+/* 1: terminal, 2: firefox, 3: brave, 4: telegram, 5: discord, 6: email, 7: steam:, 8: play button */
+static const char *tags[] = { "\uf120", "\ue007", "\ue63c", "\uf2c6", "\uf392", "\uf0e0", "\uf1b6", "\uf04b", "9" };
 
 static const Rule rules[] = {
 	/* xprop(1):
